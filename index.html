@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <style>
+      html {
+        font-size: 200%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+      }
+
+      .cell {
+        text-decoration: none;
+        text-align: center;
+        width: 1.2rem;
+        height: 1.2rem;
+        line-height: 1.2rem;
+      }
+    </style>
+    <py-config>
+      - autoclose_loader: true
+    </py-config>
+    <py-env>
+      - pydantic
+      - paths:
+        - ./ms.py
+    </py-env>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="result"></div>
+  </body>
+  <footer>
+    <py-script src="/ms.py"></py-script>
+  </footer>
+</html>
